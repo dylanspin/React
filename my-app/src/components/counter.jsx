@@ -14,6 +14,7 @@ class Counter extends Component {
         this.handleIncrement({id: 1});
     };
 
+
     render(){
         return (
           <div>
@@ -24,6 +25,12 @@ class Counter extends Component {
                   className="btn btn-secondary btn-sm"
               >
                   increment
+              </button>
+              <button
+                  onClick={this.handleDelete}
+                  className="btn btn-danger btn-sm m-2"
+              >
+                  Delete
               </button>
           </div>
         );
